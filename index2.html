@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Mon Mémento, la ligne de commande générale</title>
+  </head>
+  <body>
+    <header>
+      <h1><img src="https://simplon.co/wp-content/uploads/2016/03/logo_e2n1-e1457183164140.jpg" alt="Logo E2N" title="Logo E2N">Mon Memento</h1>
+    </header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="index3.html">GIT</a>
+    </nav>
+    <h2>La ligne de commande, dans ses grandes lignes</h2>
+    <h3>Gestion de documents</h3>
+      <p>Tout d'abord, il est important de se rappeler que presque toutes les commandes possèdent un manuel, que l'on peut consulter à tout moment pour se rappeler les options ou la fonction de la commande, grâce à la commande<mark> man</mark>. Par exemple <mark>man ls</mark> ouvrira le manuel de la commande ls et ses options.</p>
+      <p>Pour créer un dossier je dois utiliser cette commande : <mark>mkdir + 'nom du dossier'</mark>. Je peux ensuite aller dans ce nouveau dossier avec la touche <mark>cd + 'nom du dossier'</mark>. Pour revenir en arrière, j'utilise <mark>cd ..</mark>, qui me ramène sur le dossier précédent.</p>
+      <p>Pour créer un fichier, j'utilise : <mark>touch + 'nom du fichier'</mark>.</p>
+      <p>Je peux vérifier où je me situe dans les dossiers, avec la commande <mark>pwd</mark>. Je peux également vérifier quels dossiers et fichiers contient le dossier où je me trouve avec la commande <mark>ls</mark>.</p>
+      <p>Je peux utiliser la <mark>touche tabulation</mark> pour finir d'écrire un nom de dossier ou de fichier.</p>
+      <p>Je peux ouvrir un fichier sous n'importe quel logiciel avec la commande : <mark>'nom du logiciel' + 'nom du fichier'</mark></p>
+    <h3>Utilisation du sudo, root, super-utilisateur</h3>
+      <p>Je peux passer en <mark>"super-utilisateur"</mark>, en utilisant la commande <mark>sudo -s</mark> (pour y rester) ou juste <mark>sudo</mark>, juste le temps d'une ligne de commande. Il faut être particulièrement vigilant, l'utilisation du super-utilisateur peut avoir des conséquences sur le système s'il n'est pas bien utilisé</p>
+      <p>En super-utilisateur, la commande <mark>apt update</mark> met à jour la liste des fichiers disponibles dans les dépôts APT présents dans le fichier de configuration. </br>
+        La commande <mark>apt upgrade</mark>, quant à elle, met à jour les dernières versions de tous les paquets installés sur le système.</p>
+        <p>La commande <mark>dpkg -i + 'nom du paquet.deb'</mark> installe le ou les paquets indiqués, au format .deb. Cette commande s'utilise si le paquet n'est pas déjà dans les dépôts d'Ubuntu. Si le paquet est dans les dépôts, on utilise alors la commande <mark>apt install + 'nom du paquet'.</mark></p>
+  </body>
+  </html>

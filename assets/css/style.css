@@ -1,0 +1,16 @@
+body h1 {
+  color : #e14f1e;
+  text-align: center;
+}
+body h2 {
+  color: #565656;
+}
+body h3 {
+  color: #808080
+}
+mark {
+  background-color: white;
+color: #e14f1e;
+font-weight: bold;
+
+}
